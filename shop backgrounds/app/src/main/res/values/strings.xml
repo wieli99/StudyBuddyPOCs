@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SHOP</string>
+    <string name="bought">purchased</string>
 </resources>

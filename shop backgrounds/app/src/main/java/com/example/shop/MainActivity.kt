@@ -1,5 +1,6 @@
 package com.example.shop
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,12 +11,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var button = findViewById<Button>(R.id.button)
-        var button2 = findViewById<Button>(R.id.button2)
-        var button3 = findViewById<Button>(R.id.button3)
-        var button4 = findViewById<Button>(R.id.button4)
-        var button5 = findViewById<Button>(R.id.button5)
-        var button6 = findViewById<Button>(R.id.button6)
+        val button = findViewById<Button>(R.id.button)
+        val button2 = findViewById<Button>(R.id.button2)
+        val button3 = findViewById<Button>(R.id.button3)
+        val button4 = findViewById<Button>(R.id.button4)
+        val button5 = findViewById<Button>(R.id.button5)
+        val button6 = findViewById<Button>(R.id.button6)
 
         button.setOnClickListener{
             setButtonText(button)
@@ -42,9 +43,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     fun setButtonText(btn: Button){
-        btn.text = "purchased"
+        btn.text = getString(R.string.bought)
     }
 
 
