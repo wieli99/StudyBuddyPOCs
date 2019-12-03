@@ -8,7 +8,7 @@
     android:background="@drawable/wallpaper">
 
     <View
-        android:id="@+id/rectangle_at_the_top"
+        android:id="@+id/rectangle_top"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_alignParentTop="true"
@@ -25,13 +25,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
-        android:elevation="5dp"
         android:text="00:00"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:elevation="10dp"/>
 
     <ImageView
         android:id="@+id/StudyBuddy"
@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="136dp" />
+        app:layout_constraintGuide_percent="0.33576643" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
