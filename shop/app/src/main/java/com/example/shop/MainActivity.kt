@@ -10,6 +10,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //backbutton in actionbar
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
         var button = findViewById<Button>(R.id.button)
         var button2 = findViewById<Button>(R.id.button2)
         var button3 = findViewById<Button>(R.id.button3)
