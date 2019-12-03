@@ -10,6 +10,7 @@ import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
     var reachedZero: Boolean = false
+    var money = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,7 +47,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        timer.setOnChronometerTickListener {testZero(timer, lastPause, btnStart)}
+        timer.setOnChronometerTickListener {
+            testZero(timer, lastPause, btnStart)
+            money += 1
+            Log.i("money", money.toString())
+        }
     }
 
     fun testZero(timer: Chronometer, lastPause: Long, btnStart: Button){
